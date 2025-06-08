@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Vendas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <div class="maevoltar">
+            <a href="../index.html" class="voltar">
+                <div class="DivVoltar">
+                    <p><Strong>Voltar para a página inicial</Strong></p>
+                </div>
+            </a>
+        </div>
+        
+        <div class="container">
+            <h1>Sistema de Vendas</h1>
+            <p>Digite, nos campos indicados, o valor do produto e o respectivo código da forma de pagamento escolhida, como indicado na tabela abaixo:</p>
+            <div class="table">
+                <table class="tabela">
+                    <tr>
+                        <th>Código</th>
+                        <th>Forma de Pagamento</th>
+                        <th>Condições</th>
+                    </tr>
+                    <tr>
+                        <td>a</td>
+                        <td>Àvista em dinheiro ou cheque,</td>
+                        <td>Recebe 10% de desconto</td>
+                    </tr>
+                    <tr>
+                        <td>b</td>
+                        <td>Àvista no cartão de crédito</td>
+                        <td>Recebe 15% de desconto</td>
+                    </tr>
+                    <tr>
+                        <td>c</td>
+                        <td>Em duas vezes</td>
+                        <td>Preço normal de etiqueta sem juros</td>
+                    </tr>
+                    <tr>
+                        <td>d</td>
+                        <td>Em duas vezes</td>
+                        <td>Preço normal de etiqueta mais juros de 10%</td>
+                    </tr>
+                </table>
+            </div>
+            
+            <input type="text" placeholder="&nbsp;&nbsp;Insira o valor do produto" id="valorProduto"> <br>
+            <input type="text" placeholder="&nbsp;&nbsp;Insira o código da forma de pagamento" id="formaPagamento"> <br><br><br>
+
+            <button id="btCalcular" onclick="calculoTotal(); zerarInput ()">Calcular</button>
+            <ul>
+                <br>
+                <li id="li1"><br><strong id="ValorTotal">Valor Total</strong></li>
+                <br>
+            </ul>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Pagamentos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <div class="maevoltar">
+            <a href="../index.html" class="voltar">
+                <div class="DivVoltar">
+                    <p><Strong>Voltar para a página inicial</Strong></p>
+                </div>
+            </a>
+        </div>
+        
+        <div class="container">
+            <h1>Sistema de Pagamentos</h1>
+            <p>Digite, nos campos indicados, o nível do professor e a quantidade de horas/aula semanais ele tem. Assim, você receberá no campo indicado o salário deste professor.</p>
+            <div class="table">
+                <table class="tabela">
+                    <tr>
+                        <th>Nível do Professor</th>
+                        <th>Valor por hora/aula</th>
+                    </tr>
+                    <tr>
+                        <td>Nível 1</td>
+                        <td>R$12,00</td>
+                    </tr>
+                    <tr>
+                        <td>Nível 2</td>
+                        <td>R$17,00</td>
+                    </tr>
+                    <tr>
+                        <td>Nível 3</td>
+                        <td>R$25,00</td>
+                    </tr>
+                </table>
+            </div>
+            
+            <input type="text" placeholder="&nbsp;&nbsp;Insira o Nível do Professor" id="Nivel"> <br>
+            <input type="text" placeholder="&nbsp;&nbsp;Insira quantidade de Horas/aula semanais" id="HorasAula"> <br><br><br>
+
+            <button id="btCalcular" onclick="calculoSalario(); zerarInput ()">Calcular</button>
+            <ul>
+                <br>
+                <li id="li1"><br><strong id="SalarioTotal">Salário Total</strong></li>
+                <br>
+            </ul>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

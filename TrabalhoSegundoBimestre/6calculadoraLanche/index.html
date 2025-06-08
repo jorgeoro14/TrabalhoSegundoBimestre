@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Valor de Lanche</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <div class="maevoltar">
+            <a href="../index.html" class="voltar">
+                <div class="DivVoltar">
+                    <p><Strong>Voltar para a página inicial</Strong></p>
+                </div>
+            </a>
+        </div>
+        
+        <div class="container">
+            <h1>Calculadora de Valor de Lanche</h1>
+            <p>Digite, no campo indicado, o respectivo código do seu lanche de acordo com a tabela abaixo:</p>
+            <div class="table">
+                <table class="tabela">
+                    <tr>
+                        <th>Código</th>
+                        <th>Nome do lanche</th>
+                        <th>Valor unitário</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Cachorro quente</td>
+                        <td>R$11,00</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Bauru</td>
+                        <td>R$8,50</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Misto Quente</td>
+                        <td>R$8,00</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Hamburguer</td>
+                        <td>R$9,00</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Cheeseburger</td>
+                        <td>R$10,00</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>Refrigerante</td>
+                        <td>R$4,50</td>
+                    </tr>
+                </table>
+            </div>
+            
+            <input type="text" placeholder="&nbsp;&nbsp;Insira o Código do produto" id="codigo"> <br>
+            <input type="text" placeholder="&nbsp;&nbsp;Insira a quantidade" id="quantidade"> <br><br><br>
+
+            <button id="btCalcular" onclick="calculoTotal()">Calcular</button>
+            <ul>
+                <br>
+                <li id="li1"><br><strong id="ValorTotal">Valor Total</strong></li>
+                <br>
+            </ul>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

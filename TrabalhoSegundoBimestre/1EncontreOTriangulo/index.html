@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encontre o Triângulo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <div class="maevoltar">
+            <a href="../index.html" class="voltar">
+                <div class="DivVoltar">
+                    <p><Strong>Voltar para a página inicial</Strong></p>
+                </div>
+            </a>
+        </div>
+        
+        <div class="container">
+            <h1>Encontre o Triângulo</h1>
+            <p>Digite, nos campos indicados, as medidas desejadas e veja se podem ou não ser medidas de um triângulos e que tipo de triângulo é.</p>
+            <div class="table">
+                <table class="tabela">
+                    <tr>
+                        <th>Tipo de Triângulo</th>
+                        <th>Definição</th>
+                    </tr>
+                    <tr>
+                        <td>Equilátero</td>
+                        <td>Todos os lados iguais</td>
+                    </tr>
+                    <tr>
+                        <td>Isósceles</td>
+                        <td>Dois lados iguais e 1 diferente</td>
+                    </tr>
+                    <tr>
+                        <td>Escaleno</td>
+                        <td>Todos os lados diferentes</td>
+                    </tr>
+                </table>
+            </div>
+            
+            <input type="text" placeholder="&nbsp;&nbsp;Insira a medida do lado 1" id="Lado1"> <br>
+            <input type="text" placeholder="&nbsp;&nbsp;Insira a medida do lado 2" id="Lado2"> <br>
+            <input type="text" placeholder="&nbsp;&nbsp;Insira a medida do lado 3" id="Lado3"> <br><br><br>
+
+            <button id="btCalcular" onclick="verificarTriangulo(); zerarInput()">Calcular</button>
+            <ul>
+                <br>
+                <li id="li1"><br><strong id="PodeSer">Pode ser um triângulo?</strong></li>
+                <li id="li2"><br><strong id="Tipo">Tipo de triângulo</strong></li>
+                <br>
+            </ul>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

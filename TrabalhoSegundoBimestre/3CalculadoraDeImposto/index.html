@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Imposto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <div class="maevoltar">
+            <a href="../index.html" class="voltar">
+                <div class="DivVoltar">
+                    <p><Strong>Voltar para a página inicial</Strong></p>
+                </div>
+            </a>
+        </div>
+        
+        <div class="container">
+            <h1>Calculadora de Imposto</h1>
+            <p>Digite nos campos corretos o valor de tabela do carro e o ano dele, respectivamente. Em seguida, veja o valor de imposto a ser pago no campo indicado.</p>
+            
+            <input type="text" placeholder="&nbsp;&nbsp;Valor de tabela do carro" id="valor"> <br>
+            <input type="text" placeholder="&nbsp;&nbsp;Ano do carro" id="ano"> <br><br><br>
+
+            <button id="btCalcular" onclick="valorEClassificacaoIMC(); zerarInput()">Calcular</button>
+            <ul>
+                <br>
+                <li id="li1"><br><strong id="valorImposto">Valor do Imposto</strong></li>
+                <br>
+            </ul>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

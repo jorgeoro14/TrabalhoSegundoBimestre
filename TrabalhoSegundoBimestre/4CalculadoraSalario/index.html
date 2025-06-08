@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Salário</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <div class="maevoltar">
+            <a href="../index.html" class="voltar">
+                <div class="DivVoltar">
+                    <p><Strong>Voltar para a página inicial</Strong></p>
+                </div>
+            </a>
+        </div>
+        
+        <div class="container">
+            <h1>Calculadora de Salário</h1>
+            <p>Digite, nos campos indicados, o valor do salário e o respectivo código do cargo exercido, como indicado na tabela abaixo. Em seguida, verifique o salário antigo, o novo e a diferença entre eles.</p>
+            <div class="table">
+                <table class="tabela">
+                    <tr>
+                        <th>Código</th>
+                        <th>Cargo</th>
+                        <th>Percentual</th>
+                    </tr>
+                    <tr>
+                        <td>101</td>
+                        <td>Gerente</td>
+                        <td>10%</td>
+                    </tr>
+                    <tr>
+                        <td>102</td>
+                        <td>Engenheiro</td>
+                        <td>20%</td>
+                    </tr>
+                    <tr>
+                        <td>103</td>
+                        <td>Técnico</td>
+                        <td>30%</td>
+                    </tr>
+                </table>
+            </div>
+            
+            <input type="text" placeholder="&nbsp;&nbsp;Insira o valor do salário" id="salario"> <br>
+            <input type="text" placeholder="&nbsp;&nbsp;Insira o código do Cargo" id="cargo"> <br><br><br>
+
+            <button id="btCalcular" onclick="calculoTotal(); zerarInput()">Calcular</button>
+            <ul>
+                <br>
+                <li id="li1"><br><strong id="salarioantigo">Salário Antigo</strong></li>
+                <li id="li2"><br><strong id="salarionovo">Salário Novo</strong></li>
+                <li id="li3"><br><strong id="diferenca">Diferença entre os Salários</strong></li>
+                <br>
+            </ul>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
